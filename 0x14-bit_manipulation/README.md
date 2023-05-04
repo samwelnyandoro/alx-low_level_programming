@@ -310,3 +310,77 @@ $ ./f
 $
 ```
 ---
+
+### [6-100-get_endianness.c](./6-100-get_endianness.c)
+
+Write a function that checks the endianness
+
+* Prototype: 'int get_endianness(void);'
+* 0 if big endian, 1 if little endian
+
+<details>
+<summary>cat 100-main.c</summary>
+
+```C
+#include<stdio.h>
+#include "main.h"
+
+int main(void)
+{
+    int n;
+
+    n = get_endianness();
+    if (n != 0)
+    {
+        printf("Little Endian\n");
+    }
+    else
+    {
+        printf("Big Endian\n");
+    }
+    return (0);
+}
+```
+
+</details>
+
+### Output
+```
+
+$ alias gccw="gcc -Wall -pedantic -Werror -Wextra "
+$ gccw 100-main.c 100-get_endianness.c -o f
+$ ./f
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                1
+On-line CPU(s) list:   0
+Thread(s) per core:    1
+Core(s) per socket:    1
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+$
+```
+---
+
+### [7-101-password](./7-101-password)
+
+Find the password for this program
+
+* Save the password in the file 101-password 
+* Your file should contain the exact password, no new line, no extra space
+
+<details>
+<summary>crackme3 cat 101-password</summary>
+
+```
+```
+</details>
+
+### Output
+```
+$ Congratulations!
+$
+```
+---
